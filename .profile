@@ -22,6 +22,9 @@ HISTSIZE=1000000                #maximum Lines of History
     alias df="df -h"
     alias rm="rm -i"
     alias mv="mv -i"
+    alias tc="tar -cvf"
+    alias tx="tar -xvf"
+    alias tv="tar -tvf"
 
 echo "list up all aliases:"
 alias
