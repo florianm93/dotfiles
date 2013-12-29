@@ -11,6 +11,9 @@ export VISUAL="/usr/local/bin/vim"
 HISTFILESIZE=1000000000         #maximum Lines of History
 HISTSIZE=1000000                #maximum Lines of History 
 
+export PS1="${BLACK}\u@\h:${BLUE}\W${NO_COLOUR} $ "         #setting bash promt
+
+
 #aliases
     alias py="python"
     alias strukt="/Applications/Structorizer.app/Contents/MacOS/JavaApplicationStub"
@@ -25,6 +28,13 @@ HISTSIZE=1000000                #maximum Lines of History
     alias tc="tar -cvf"
     alias tx="tar -xvf"
     alias tv="tar -tvf"
+
+#functions
+ cl() {                 #change into a dir and list up its contents
+    cd $1 && ls ./ 
+}
+
+
 
 echo "list up all aliases:"
 alias
