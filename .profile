@@ -11,7 +11,11 @@ export VISUAL="/usr/local/bin/vim"
 HISTFILESIZE=1000000000         #maximum Lines of History
 HISTSIZE=1000000                #maximum Lines of History 
 
-export PS1="${BLACK}\u@\h:${BLUE}\W${NO_COLOUR} $ "         #setting bash promt
+GREEN="\[\033[1;32m\]"          #setting colors 
+BLUE="\[\033[1;34m\]" 
+NO_COLOUR="\[\033[0m\]" 
+
+export PS1="${GREEN}\u@\h:${BLUE}\W${NO_COLOUR} % "       #setting bash promt
 
 
 #aliases
@@ -28,6 +32,7 @@ export PS1="${BLACK}\u@\h:${BLUE}\W${NO_COLOUR} $ "         #setting bash promt
     alias tc="tar -cvf"
     alias tx="tar -xvf"
     alias tv="tar -tvf"
+    alias vi="vim"
 
 #functions
  cl() {                 #change into a dir and list up its contents
